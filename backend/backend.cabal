@@ -27,6 +27,8 @@ library
   exposed-modules:
       API.Temperature
       Lib
+      Lib.Temperature
+      Server
       Type.Temperature
   other-modules:
       Paths_backend
@@ -36,6 +38,8 @@ library
       aeson
     , base >=4.7 && <5
     , servant-server
+    , wai
+    , warp
   default-language: Haskell2010
 
 executable backend-exe
@@ -50,6 +54,8 @@ executable backend-exe
     , backend
     , base >=4.7 && <5
     , servant-server
+    , wai
+    , warp
   default-language: Haskell2010
 
 test-suite backend-test
@@ -65,4 +71,6 @@ test-suite backend-test
     , backend
     , base >=4.7 && <5
     , servant-server
+    , wai
+    , warp
   default-language: Haskell2010

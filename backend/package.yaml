@@ -23,6 +23,8 @@ dependencies:
   - base >= 4.7 && < 5
   - servant-server
   - aeson
+  - wai
+  - warp
 
 library:
   source-dirs: src
