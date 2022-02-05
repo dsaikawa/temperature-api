@@ -23,3 +23,5 @@ type PostTemperature
 
 type GetTemperatures
   = "user" :> Capture "userId" String :> "temperature" :> Get '[JSON] [Temperature]
+
+type TemperatureAPI = PostTemperature :<|> GetTemperatures
